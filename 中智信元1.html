@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>5.23作业1</title>
+	<style>
+    *{
+	padding: 0;
+	margin: 0;
+    }
+    .clear:after{
+	content: " ";
+	height: 0;
+	display: block;
+	clear: both;
+    }
+    ul,li,ol{
+	list-style: none;
+    }
+    a{
+	text-decoration: none;
+    }
+    .head{
+	height: 172px;
+	background-color: #efefef;
+	padding-top: 30px;
+	text-decoration: none;
+    }
+    .logo{
+	text-align: center;
+	height: 125px;
+    }
+    .nav{
+	width: 700px;
+	height: 45px;
+	background-color: #fff;
+	margin: 0 auto;
+	border-radius: 23px;
+	font-size: 15px;
+    }
+    .nav li{
+	float: left;
+	height: 45px;
+	padding: 0 30px;
+	line-height: 45px;
+	background: url('./zzxy/首行.png') no-repeat right center;
+	text-align: center;
+	margin-top: 0px;
+    }
+    .nav li s:hover{
+	display: block;
+	height: 42px;
+	border-bottom: 3px solid #1e50ae;
+    }
+    .nav li:last-child{
+	background: none;
+    }
+    .b{
+	width: 100%;
+	height: 405px;
+	background: url(./zzxy/2.png) no-repeat center center;
+
+    }
+    .c{
+	width: 1200px;
+	height: 810px;
+	margin: 0 auto;
+	background-color: #fffff; 
+    }
+    .d{
+	text-align: center;
+	margin-top: 60px;
+	font-size: 35px;
+	margin-bottom:20px;
+    }
+    .e{
+	text-align: center;
+	font-size: 20px;
+    }
+    .b ul{
+	float: left;
+	width: 300px;
+	margin: 0 auto;
+    }
+    .on{
+	height: 410px;
+	width: 300px;
+	padding-top: 62px;
+	float: left;
+	text-align: center;
+    }
+    .down{
+	width: 300px;
+	float: right;
+	text-align: center;
+    }
+    .c ul{
+	margin-left: 106px;
+    }
+    .c ul li{
+	list-style: url('./zzxy/灰点.png');
+    }
+    .f{
+	margin: 0 auto;
+    }
+    .f p{
+	text-align: center;
+    }
+    .f div{
+	float: left;
+    }
+
+    .body1{
+	height: 712px;
+	width: 100%;
+	background: url('./zzxy/背景.png') no-repeat center center;
+    }
+    .g{
+	height: 712px;
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+    }
+    .g li{
+	float: left;
+    }
+    .p2{
+	margin-top: 74px;
+	height: 384px;
+	width: 300px;
+    }
+    .p1{
+	height: 80px;
+	
+	text-align: center;
+	
+    }
+    .p1 h4{
+	font-weight: normal;
+	line-height: 80px;
+	font-size: 35px;
+    }
+    .g p{
+	font-size: 24px;
+	margin-top: 0px;
+    }
+    .h{
+	height: 44px;
+    }
+    .g button{
+	font-size: 20px;
+	color: #fff;
+	width: 230px;
+	height: 50px;
+	background: none;
+	border: 2px solid #fff;
+	border-radius: 25px;
+	margin-bottom: 63px;
+    }
+    .i{
+	height: 905px;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+    }
+    .j{
+	height: 37px;
+    }
+    .k{
+	height: 80px;
+    }
+    .k h3{
+	line-height: 80px;
+	font-size: 35px;
+	font-weight: normal;
+    }
+    .l{
+	font-size: 28px;
+    }
+    .body2{
+	width: 1200px;
+	height: 770px;
+	margin:  0 auto;
+    }
+    .body2 li{
+	float: left:;
+    }
+    .w1{
+	width: 600px;
+	height: 380px;
+    }
+    .w1 img{
+	margin-right: 35px;
+	margin-top: 25px;
+    }
+    .w2{
+	width: 600px;
+	height: 380px;
+	margin-top: 50px;
+    }
+    .w21{
+	margin-right: 419px;
+	float: left;
+	line-height: 55px;
+    }
+    .w22{
+	margin-right: 264px;
+	float: left;
+	margin-bottom: 25px;
+    }
+    .w23{	
+    margin-right: 72px;
+	float: left;
+    }
+    .w24{
+	margin-right: 275px;
+	margin-bottom: 30px;
+	float: left;
+    }
+    .w2 h3{
+	clear: both;
+	font-size: 22px;
+	color: #333333;
+    }
+    .w2 h5{
+	font-weight: normal;
+	font-size: 15px;
+	color: #333333;
+    }
+    .w2 p{
+	font-size: 14px;
+	line-height: 34px;
+	color: #9e9e9e;
+    }
+    .w2 button{
+	font-size: 16px;
+	color: #1141a3;
+	width: 139px;
+	height: 40px;
+	background: none;
+	border: 1px solid #1141a3;
+	border-radius: 20px;
+	margin-bottom: 63px;
+    }
+    .body2 li{
+	float: left;
+    }
+    .w31{
+	width: 532px;
+	height: 284px;
+	margin: 0 auto;
+  	margin-left: 70px;
+    }
+    .w32{
+	width: 532px;
+	height: 284px;
+	margin: 0 auto;
+    }
+    .w31 li{
+	float: left;
+    }
+    .w31 p{
+	font-size: 14px;
+	color: #797979;
+    }
+    .w31 img{
+	margin-bottom: 6px;
+    }
+    .w32 li{
+ 	float: left;
+    }
+    .w32 img{
+	margin-bottom: 6px;
+    }
+    .w32 p{
+	font-size: 14px;
+	color: #797979;
+    }
+    .n{
+	width: 100%;
+	height: 102px;
+	background-color: #f5f5f5;
+    }
+    .o{
+	margin: 0 auto;
+	width: 1200px;
+	height: 102px;
+    }
+    .n li{
+	float: left;
+    }
+    .q{
+	width: 300px;
+	height: 102px;
+    }
+    .q img{
+	margin-top: 29px;
+	margin-left: 54px;
+	float: left;
+    }
+    .q li{
+	margin-bottom: 8px;
+	margin-left: 23px;
+	float: left;
+    }
+    .r{
+	margin-top: 26px;
+	font-size: 19px;
+    }
+    .t{
+	font-size: 13px;
+    }
+    .li1{
+	background-color: #323232;
+	width: 1560px;
+	height: 387px;
+	margin: 0 auto;
+	text-align: center; 
+    }
+    .li2{
+	width: 1200px;
+	height: 260px;
+	margin: 0 auto;
+    }
+    .li2 li{
+	float: left;
+    }
+    .li3{
+	width: 80px;
+	height: 150px;
+	margin-top: 75px;
+	margin-left: 6px;
+    }
+
+    .li4{
+	width: 80px;
+	height: 150px;
+	margin-top: 75px;
+	margin-left: 90px;
+    }
+    .li5{
+	color: #fff;
+	font-size: 18px;
+	line-height: 50px;
+    }
+    .li6{
+	color: #fff;
+	font-size: 14px;
+	line-height: 35px;
+    }
+    .u{
+	width: 147px;
+	height: 147px;
+	margin-top: 73px;
+	margin-left: 88px;
+    }
+    .v{
+	width: 26px;
+	height: 130px;
+	margin-left: 35px;
+	margin-top: 83px;
+	font-size: 16px;
+	list-style: none;
+	line-height: 27px;
+	color: #fff;
+    }
+    .w{
+	width: 210px;
+	height: 127px;
+	font-size: 16px;
+	line-height: 49px;
+	margin-top: 84px;
+	margin-left: 76px;
+	color: #fff;
+    }
+    .li7{
+	width: 740px;
+	height: 23px;
+	margin: 0 auto;
+	margin-top: 36px;
+    }
+    .li7 p{
+	color: #fff;
+	font-size: 14px;
+    }
+    .li8{
+	width: 280px;
+	height: 15px;
+	margin: 0 auto;
+	margin-top: 20px;
+    }
+    .li8 p{
+	color: #fff;
+	font-size: 14px;
+    }
+    .b li{
+	color: #919191;
+    }
+	</style>
+</head>
+<body>
+	<div class="head">
+		<div class="logo">
+			<img src="./zzxy/中智信元.png">
+		</div>
+		<ul class="nav .clear">
+			<li><a href="">首页</a></li>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">中智服务</a></li>
+			<li><a href="">解决方案</a></li>
+			<li><a href="">最新资讯</a></li>
+			<li><a href="" class="last">联系我们</a></li>
+		</ul>
+	</div>
+	<div class="b"></div>
+	<div class="c">
+		<div class="f">
+		<p class="d">服务项目</p>
+		<p class="e">SERVICE ITEMS</p>
+		<div  class="on">
+			<img src="./zzxy/2-1.png">
+		<p>工商代理</p>
+		<ul>
+			<li>公司注册</li>
+			<li>公司注册地址</li>
+			<li>分公司注册</li>
+			<li>外资注册</li>
+			<li>股权变更</li>
+			<li>公司注销</li>
+		</ul>
+		</div>
+		<div class="on">
+			<img src="./zzxy/2-2.png">
+		<p>财务代理</p>
+		<ul>
+			<li>代理记账</li>
+			<li>税务筹划</li>
+			<li>审计服务</li>
+		</ul>
+		</div>
+		<div class="on">
+			<img src="./zzxy/2-3.png">
+		<p>资质服务</p>
+		<ul>
+			<li>各类许可证</li>
+			<li>资质审批</li>
+			<li>高新企业</li>
+			<li>商标专利</li>
+		</ul>
+		</div>
+		<div class="on">
+			<img src="./zzxy/2-4.png">
+		<p>特色服务</p>
+		<ul>
+		</ul>
+		</div>
+		<div class="down">
+			<img src="./zzxy/3-1.png">
+			<p>公积金社保代理</p>
+		</div>
+		<div class="down">
+			<img src="./zzxy/3-2.png">
+			<p>办公室租赁</p>
+		</div>
+		<div class="down">
+			<img src="./zzxy/3-3.png">
+			<p>营业执照转让</p>
+		</div>
+		<div class="down">
+			<img src="./zzxy/3-4.png">
+			<p>法律服务</p>
+		</div>
+		</div>
+	</div>
+	<div class="body1">
+		<div class="g">
+			<div class="h"></div>
+			<div class="p1"><h4>解决方案</h4></div>
+			<p>SOLUTION</p>
+			<ul>
+				<li>
+					<div class="p2"><img src="./zzxy/4-1.png"></div>
+				</li>
+				<li>
+					<div class="p2"><img src="./zzxy/4-2.png"></div>
+				</li>
+				<li>
+					<div class="p2"><img src="./zzxy/4-3.png"></div>
+				</li>
+				<li>
+					<div class="p2"><img src="./zzxy/4-4.png"></div>
+				</li>
+			</ul>
+			<button>了解更多>></button>
+		</div>
+	</div>
+	<div class="i">
+		<div class="j"></div>
+		<div class="k">
+			<h3>最新资讯</h3>
+		</div>
+		<p class="l">LAEST INFORMATION</p>
+		<div class="body2">
+			<ul>
+				<li>
+					<div class="w1">
+						<img src="./zzxy/球.png">
+					</div>
+				</li>
+				<li>
+					<div class="w2">
+						<ul>
+							<li class="w21"><h4>交易明智＆方便</h4></li>
+				            <li class="w22"><h5>TRANSACTION WISE＆CONVENIENT</h5></li>
+				            <li class="w23"><p>要适应快速发展的差价合约市场，客户需要一个能让他们不用经纪商的介入就能分</p></li>
+				            <li class="w23"><p>析实时报价、进行实时交易以及应用投资策略的平台。他们需要一个简单便捷的界</p></li>
+				            <li class="w24"><p>面来管理他们的账户，并能轻松查看图标和报告。</p></li>
+				            <li><button>了解详情</button></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<ul>
+			    <li>
+			    <div class="w31">
+			        <ul>
+				        <li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				        <li><img src="./zzxy/虚线.png"></li>
+				        <li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				        <li><img src="./zzxy/虚线.png"></li>
+				        <li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				        <li><img src="./zzxy/虚线.png"></li>
+				        <li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				        <li><img src="./zzxy/虚线.png"></li>
+				        <li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				        <li><img src="./zzxy/虚线.png"></li>
+				        <li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+			        </ul>
+			    </div>
+			    </li>
+			    <li>
+			        <div class="w32">
+			        <ul>
+				        <li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				        <li><img src="./zzxy/虚线.png"></li>
+				        <li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				        <li><img src="./zzxy/虚线.png"></li>
+				        <li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				        <li><img src="./zzxy/虚线.png"></li>
+				        <li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				        <li><img src="./zzxy/虚线.png"></li>
+				        <li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				        <li><img src="./zzxy/虚线.png"></li>
+				        <li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+			        </ul>
+			        </div>
+			    </li>
+		    </ul>
+		</div>
+	</div>
+	<div class="n">
+		<div class="o">
+			<ul>
+				<li>
+					<div class="q">
+						<img src="./zzxy/5-1.png">
+						<ul>
+							<li><p class="r">资质认证</p></li>
+							<li><p class="t">服务商100%实名认证</p></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="q">
+						<img src="./zzxy/5-2.png">
+						<ul>
+							<li>
+								<p class="r">支付安全</p>
+							</li>
+							<li>
+								<p class="t">明码标价支付及信息安全</p>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="q">
+						<img src="./zzxy/5-3.png">
+						<ul>
+							<li>
+								<p class="r">保险赔付</p>
+							</li>
+							<li>
+								<p class="t">为您提供担保赔付</p>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="q">
+						<img src="./zzxy/5-4.png">
+						<ul>
+							<li>
+								<p class="r">售后无忧</p>
+							</li>
+							<li>
+								<p class="t">服务出问题经理全程跟进</p>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="li1">
+		<div class="li2">
+			<ul>
+				<li>
+					<div class="li3">
+						<ul>
+							<li><p class="li5">中智信元</p></li>
+							<li><a href="" class="li6">加入我们</a></li>
+							<li><a href="" class="li6">联系我们</a></li>
+							<li><a href="" class="li6">最新动态</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="li4">
+						<ul>
+							<li><p class="li5">订单服务</p></li>
+							<li><a href="" class="li6">支付方式</a></li>
+							<li><a href="" class="li6">退款说明</a></li></a></li>
+							<li><a href="" class="li6">购买流程</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="li4">
+						<ul>
+							<li><p class="li5">售后服务</p></li>
+							<li><a href="" class="li6">在线问答</a></li>
+							<li><a href="" class="li6">服务中心</a></li></a></li>
+							<li><a href="" class="li6">售后政策</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="li4">
+					<ul>
+						<li><p class="li5">常见问题</p></li>
+						<li><a href="" class="l6">新手帮助</a></li>
+						<li><a href="" class="li6">支付帮助</a></li>
+						<li><a href="" class="li6">开具发票</a></li>
+					</ul>
+				    </div>
+				</li>
+				<li>
+					<div class="u">
+						<img src="./zzxy/二维码.png">
+					</div>
+				</li>
+				<li>
+					<div class="v">
+						<ul>
+							<li><p>微</p></li>
+							<li><p>信</p></li>
+							<li><p>扫</p></li>
+							<li><p>一</p></li>
+							<li><p>扫</p></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="w">
+						<ul>
+							<li>咨询热线：400-000-0000</li>
+							<li><img src="./zzxy/qq.png">    1234567888@qq.com</li>
+							<li><img src="./zzxy/微信.png">    某某企业网站官方微信</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<hr>
+		<div class="li7">
+			<p>首页    |    工商代理    |    财务代记账   |     股权交易与变更    |     企业贷款    |     办公室租赁</p>
+		</div>
+		<div class="li8">
+			<p>© 2017-2018 中智信元有限公司 版权所有</p>
+		</div>
+	</div>
+</body>
+</html>
